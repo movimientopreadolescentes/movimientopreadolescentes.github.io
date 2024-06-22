@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+.Logo img {
+    width: 130px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+header ul li {
+    color: rgb(255, 115, 0);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 23px 20px 15px 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.todo {
+    background-color: rgb(255, 115, 0);
+    padding: 1px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 115, 0);
+    max-width: 900px;
+    margin: auto;
+}
+
+.contenido h1 {
+    margin: 10px 40px 30px 100px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenido p {
+    margin: 0px 40px 40px 100px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cardo {
+    flex: 1 1 300px;
+    max-width: 18rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 0 0;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+footer .Logo img {
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: rgb(111, 111, 110);
+}
+
+footer ul li {
+    height: 25px;
+}
+
+footer .cajaredes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+footer .redes li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(111, 111, 110);
+}
+
+footer .redes li i {
+    margin-right: 5px;
+}
+
+footer .redes a p {
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .contenido {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+    .contenido h1,
+    .contenido p {
+        margin: 10px 20px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .cajaredes {
+        align-items: flex-start;
+        margin-right: 0;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo img {
+        width: 100px;
+    }
+    nav ul li a {
+        padding: 8px;
+    }
+    footer .Logo img {
+        width: 80px;
+    }
+    footer ul li {
+        font-size: 14px;
+    }
+    footer .redes a p {
+        font-size: 14px;
+    }
+}
+
+.card-body p {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 115, 0);
+}

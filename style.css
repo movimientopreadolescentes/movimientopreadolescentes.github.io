@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(255, 115, 0);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(255, 115, 0);
+}
+
+.Logo img {
+    width: 130px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+header ul li {
+    color: rgb(255, 115, 0);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    margin: 23px 20px;
+}
+
+.carruselinicio {
+    padding: 30px 0;
+    background-color: rgb(255, 115, 0);
+}
+
+.carousel-item {
+    width: 100%;
+    height: 500px; /* Ajusta esta altura según tus necesidades */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container .text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 115, 0);
+}
+
+.container .text h2 {
+    font-size: 2em;
+}
+
+.container .text p {
+    font-size: 1.2em;
+}
+
+.texto a {
+    color: rgb(255, 115, 0);
+}
+
+.texto button {
+    border: 0;
+    color: rgb(255, 115, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.todo{
+    background-color: rgb(255, 115, 0);
+}
+
+.resumen {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.resumen h1 {
+    margin: 70px 0 0 0;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.resumen small {
+    margin: 1px 0 30px 0;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.resumen p {
+    margin: 0 0 40px 0;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#escondido1,
+#escondido2,
+#escondido3,
+#escondido4,
+#escondido5,
+#escondido6 {
+    display: none;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 0 0;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+footer .Logo img {
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: rgb(111, 111, 110);
+}
+
+footer ul li {
+    height: 25px;
+}
+
+footer .cajaredes {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .cajaredes li {
+    display: flex;
+    flex-direction: row;
+    margin: 1px 1px 1px 100%;
+    color: rgb(111, 111, 110);
+}
+
+@media (max-width: 1200px) {
+    .resumen {
+        padding: 0 40px;
+    }
+
+    .resumen h1 {
+        font-size: 1.8em;
+    }
+
+    .resumen small {
+        font-size: 1em;
+    }
+
+    .resumen p {
+        font-size: 0.9em;
+    }
+
+    .container .text h2 {
+        font-size: 1.8em;
+    }
+
+    .container .text p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    .container .text {
+        padding: 10px;
+    }
+
+    .resumen {
+        padding: 0 30px;
+    }
+
+    .resumen h1 {
+        font-size: 1.6em;
+    }
+
+    .resumen small {
+        font-size: 0.9em;
+    }
+
+    .resumen p {
+        font-size: 0.8em;
+    }
+
+    .container .text h2 {
+        font-size: 1.6em;
+    }
+
+    .container .text p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .Logo img {
+        width: 100px;
+    }
+
+    .container .text {
+        top: 30%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .cajaredes {
+        align-items: flex-start;
+    }
+
+    .resumen {
+        padding: 0 20px;
+    }
+
+    .resumen h1 {
+        font-size: 1.4em;
+    }
+
+    .resumen small {
+        font-size: 0.8em;
+    }
+
+    .resumen p {
+        font-size: 0.7em;
+    }
+
+    .container .text h2 {
+        font-size: 1.4em;
+    }
+
+    .container .text p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo img {
+        width: 80px;
+    }
+
+    nav ul li a {
+        padding: 8px;
+    }
+
+    footer .Logo img {
+        width: 60px;
+    }
+
+    footer ul li {
+        font-size: 14px;
+    }
+
+    footer .redes a p {
+        font-size: 14px;
+    }
+
+    .resumen {
+        padding: 0 10px;
+    }
+
+    .resumen h1 {
+        margin: 50px 0 0 0;
+        font-size: 1.2em;
+    }
+
+    .resumen small {
+        font-size: 0.7em;
+        margin: 1px 0 20px 0;
+    }
+
+    .resumen p {
+        font-size: 0.6em;
+        margin: 0 0 30px 0;
+    }
+
+    .container .text h2 {
+        font-size: 1.2em;
+    }
+
+    .container .text p {
+        font-size: 0.7em;
+    }
+}

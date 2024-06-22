@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.todo{
+    background-color: rgb(255, 115, 0);
+    padding: 1px;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.Logo img{
+    width: 130px;
+    height: auto;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+header ul li{
+    color: rgb(255, 115, 0);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 23px 20px 15px 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li{
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+    nav ul li a{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo img {
+        width: 100px;
+    }
+    nav ul li a{
+        padding: 8px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 0 0;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+footer .Logo img{
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: rgb(111, 111, 110);
+}
+
+footer ul li{
+    height: 25px;
+}
+
+footer .cajaredes{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .cajaredes li{
+    display: flex;
+    flex-direction: row;
+    margin: 1px 1px 1px 100%;
+    color: rgb(111, 111, 110);
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .cajaredes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .Logo img{
+        width: 80px;
+    
+    }
+    footer ul li {
+        font-size: 14px;
+    }
+    footer .redes a p{
+        font-size: 14px;
+    }
+}
+
+
+.lineadetiempo{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    background-color: rgb(255, 115, 0);
+}
+
+.contenedor{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.contenedor:nth-child(1){
+    animation-delay: 0s;
+}
+.contenedor:nth-child(2){
+    animation-delay: 1s;
+}
+.contenedor:nth-child(3){
+    animation-delay: 2s;
+}
+.contenedor:nth-child(4){
+    animation-delay: 3s;
+}
+.contenedor:nth-child(5){
+    animation-delay: 4s;
+}
+.contenedor:nth-child(6){
+    animation-delay: 5s;
+}
+
+.cajatexto{
+    padding: 20px 30px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: rgb(255, 115, 0);
+}
+
+.izq{
+    left: 0;
+}
+
+.der{
+    left: 50%;
+}
+
+.contenedor img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.der img{
+    left: -20px;
+}
+
+
+.cajatexto h2{
+    font-weight: 600;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cajatexto small{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cajatexto p{
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flechaizq{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(0, 0, 0);
+    right: -14px;
+}
+
+.flechader{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(0, 0, 0);
+    left: -14px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 115, 0);
+    width: 900px;
+}
+
+.contenido h1{
+    margin: 10px 40px 30px 100px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenido p{
+    margin: 0px 40px 40px 100px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

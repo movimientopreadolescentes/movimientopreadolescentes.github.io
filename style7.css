@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todo {
+    background-color: rgb(255, 115, 0);
+    padding: 1px;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.Logo img {
+    width: 130px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+header ul li {
+    color: rgb(255, 115, 0);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 23px 20px 15px 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 115, 0);
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Logo img {
+        width: 100px;
+    }
+    nav ul li a {
+        padding: 8px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0 0 0;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+footer .Logo img {
+    width: 100px;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(111, 111, 110);
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: rgb(111, 111, 110);
+}
+
+footer ul li {
+    height: 25px;
+}
+
+footer .cajaredes {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .cajaredes li {
+    display: flex;
+    flex-direction: row;
+    margin: 1px 1px 1px 100%;
+    color: rgb(111, 111, 110);
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .cajaredes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    footer .Logo img {
+        width: 80px;
+    }
+    footer ul li {
+        font-size: 14px;
+    }
+    footer .redes a p {
+        font-size: 14px;
+    }
+}
+.todo {
+    padding: 1px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 115, 0);
+}
+
+.contenedor-contacto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(./imagenes/contactanos.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 200px;
+    padding-top: 150px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.titulo h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.titulo hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.contacto-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    border-radius: 50px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 115, 0);
+}
+
+.contacto textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contacto button {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(255, 115, 0);
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+}
